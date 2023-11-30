@@ -6,6 +6,8 @@ import EditTaskForm from './components/EditTaskForm';
 
 function App() {
   return (
+
+    // All routes
     <Router>
       <Routes>
         <Route path="/" element={<TaskList />} />
