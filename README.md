@@ -1,5 +1,8 @@
 # Getting Started with Create React App
-![App Screenshot](https://github.com/Maykkkk/Task-manager/blob/ce904b9e811e906370cf73cf7c239df7953234d3/public/Screenshot%202023-11-29%20112039.png)
+![App Screenshot](https://github.com/Awadg8/React-Task-Manager/blob/master/public/Screenshot_20231130_171448.png)
+https://github.com/Awadg8/React-Task-Manager/blob/master/public/Screenshot_20231130_171503.png
+https://github.com/Awadg8/React-Task-Manager/blob/master/public/Screenshot_20231130_171517.png
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
