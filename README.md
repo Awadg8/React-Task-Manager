@@ -8,16 +8,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Key Features
 
-- Fetches and displays user contacts from the provided API.
-- Allows users to add new contacts via a POST request to the API.
-- Enables updating of contact information through a PUT request to the API.
-- Provides a convenient delete functionality for removing contacts using a DELETE request to the API.
-- Ensures data consistency and accuracy by synchronizing changes with the API.
-- Enhances contact management and organization.
-- Streamlines the process of adding, updating, and deleting contacts.
+- Allows users to Add task in a list.
+- Users can TICK MARK the task those are done.
+- User can EDIT a task at any moment.
+- Provides a convenient DELETE functionality for removing tasks using a DELETE button.
+- Enhances Task management and organization.
+- Streamlines the process of adding, updating, and deleting Task.
 - Utilizes React.js to create a responsive and interactive user interface.
-- Integrates with an external API for retrieving and manipulating contact data.
-- Offers a user-friendly experience for browsing, editing, and removing contacts.
+- Offers a user-friendly experience for browsing, editing, and removing Tasks.
 
 ## Topics
 
