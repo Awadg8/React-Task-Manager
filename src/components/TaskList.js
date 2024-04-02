@@ -3,6 +3,22 @@ import { Link } from 'react-router-dom';
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
+  const [sortedTasks, setSortedTasks] = useState([]);
+
+
+  const sortTasks = () => {
+    const sortedTasks = tasks.slice().sort((a, b) => {
+      if (a.priority === 'high' && b.priority !== 'high') return -1;
+      if (a.priority === 'medium' && b.priority === 'low') return -1;
+      if (a.priority === 'low' && b.priority !== 'low') return 1;
+      return 0;
+    });
+    setSortedTasks(sortedTasks);
+  };
+
+  useEffect(() => {
+    sortTasks();
+  }, [tasks]);
 
   useEffect(() => {
     // Fetch tasks from local storage on component mount
@@ -39,7 +55,7 @@ const TaskList = () => {
         <div className="todo-app" style={{ background: 'black', padding: '20px', borderRadius: '8px' }}>
           <h1 className="mb-4 text-center" style={{color: "white"}}>Tasks List</h1>
           <ul className="list-group">
-            {tasks.map(task => (
+            {sortedTasks.map(task => (
               <li key={task.id} className="list-group-item d-flex justify-content-between align-items-center todo-row">
                 <div>
                   <input
